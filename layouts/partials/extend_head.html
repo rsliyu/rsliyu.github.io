@@ -1,45 +1,5 @@
-{{ if .IsPage }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "{{ .Title }}",
-  "description": "{{ .Description | default .Summary | plainify | truncate 160 }}",
-  "url": "{{ .Permalink }}",
-  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
-  "author": {
-    "@type": "Person",
-    "name": "{{ .Params.author | default .Site.Params.author }}",
-    "url": "{{ .Site.BaseURL }}"
-  },
-  "publisher": {
-    "@type": "Person",
-    "name": "{{ .Site.Params.author }}",
-    "url": "{{ .Site.BaseURL }}"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ .Permalink }}"
-  }
-  {{- if .Params.tags }},
-  "keywords": [{{ range $i, $tag := .Params.tags }}{{ if $i }}, {{ end }}"{{ $tag }}"{{ end }}]
-  {{- end }}
-}
-</script>
-{{ else if .IsHome }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "{{ .Site.Title }}",
-  "url": "{{ .Site.BaseURL }}",
-  "description": "{{ .Site.Params.description }}",
-  "author": {
-    "@type": "Person",
-    "name": "{{ .Site.Params.author }}",
-    "url": "{{ .Site.BaseURL }}"
-  }
-}
-</script>
-{{ end }}
+{{- if .Site.Params.goatcounter -}}
+{{- $gc := .Site.Params.goatcounter -}}
+<script data-goatcounter="https://{{ $gc.code }}.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+{{- end -}}

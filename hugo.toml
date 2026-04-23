@@ -23,7 +23,20 @@ theme = "PaperMod"
   ShowCodeCopyButtons = true
   ShowToc = true
   TocOpen = false
-  comments = false
+  comments = true
+  [params.giscus]
+    repo = "rsliyu/rsliyu.github.io"
+    repoId = "R_kgDOOx..."
+    category = "Announcements"
+    categoryId = "DIC_kwDOOx..."
+    mapping = "pathname"
+    strict = "0"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "top"
+    theme = "dark"
+    lang = "zh-CN"
+    loading = "lazy"
   ShowWordCount = true
   ShowRssButtonInTermList = true
   UseHugoToc = true
@@ -84,6 +97,10 @@ theme = "PaperMod"
     URL = ""
     Text = "编辑本文"
     appendFilePath = true
+
+  # GoatCounter Analytics
+  [params.goatcounter]
+    code = "rsliyu"
 
   # Assets
   [params.assets]
