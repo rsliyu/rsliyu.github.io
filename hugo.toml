@@ -38,7 +38,7 @@ theme = "PaperMod"
     enabled = true
     title = "👋 你好，我是煜哥"
     subtitle = "遥感工程师 · AI 全栈开发者 · 开源爱好者"
-    imageUrl = "images/avatar.png"
+    imageUrl = "/images/avatar.svg"
     imageWidth = 150
     imageHeight = 150
     imageTitle = "煜哥"
@@ -88,6 +88,7 @@ theme = "PaperMod"
   # Assets
   [params.assets]
     disableFingerprinting = true
+    favicon = "/favicon.svg"
 
   # Label
   [params.label]
