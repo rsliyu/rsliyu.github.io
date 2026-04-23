@@ -1,0 +1,463 @@
+/* Custom CSS for PaperMod Theme */
+/* 煜哥的博客 - 遥感 · AI · 全栈开发 */
+
+/* ============================================
+   1. 色彩系统 - 深色主题层次感
+   ============================================ */
+:root {
+  /* 主色调 */
+  --primary-color: #3B82F6;
+  --primary-light: #60A5FA;
+  --primary-dark: #2563EB;
+  --accent-color: #00C2FF;
+  --accent-light: #33D1FF;
+  
+  /* 背景色 */
+  --bg-primary: #0F172A;
+  --bg-secondary: #1E293B;
+  --bg-tertiary: #334155;
+  
+  /* 文字色 */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  
+  /* 边框 */
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-glow: rgba(0, 194, 255, 0.3);
+  
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  
+  /* 字体 */
+  --font-display: 'Noto Sans SC', -apple-system, 'PingFang SC', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'DIN Alternate', monospace;
+}
+
+/* ============================================
+   2. 背景纹理 - 打破纯色
+   ============================================ */
+body {
+  background: var(--bg-primary);
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(45, 140, 240, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(0, 212, 255, 0.04) 0%, transparent 40%),
+    radial-gradient(ellipse at 60% 80%, rgba(114, 46, 209, 0.03) 0%, transparent 40%),
+    url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='0.5' fill='%23ffffff' fill-opacity='0.03'/%3E%3C/svg%3E");
+  font-family: var(--font-display);
+}
+
+/* ============================================
+   3. Profile Mode 增强
+   ============================================ */
+.profile {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 40px;
+  margin: 30px 0;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+  animation: fadeSlideUp 0.6s ease-out both;
+}
+
+.profile::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+}
+
+.profile img {
+  border: 3px solid var(--accent-color);
+  box-shadow: 0 0 20px rgba(0, 194, 255, 0.3);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.profile img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 194, 255, 0.5);
+}
+
+.profile h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 20px 0 10px;
+  background: linear-gradient(90deg, var(--text-primary), var(--accent-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.profile .subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+/* ============================================
+   4. 按钮样式
+   ============================================ */
+.profile .buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.profile .buttons a {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary));
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+  box-shadow: var(--shadow-sm);
+}
+
+.profile .buttons a:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-glow);
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+}
+
+.profile .buttons a svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  transition: transform 0.3s ease-out;
+}
+
+.profile .buttons a:hover svg {
+  transform: translateX(2px);
+}
+
+/* ============================================
+   5. 社交图标
+   ============================================ */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  transition: all 0.3s ease-out;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-glow);
+  color: var(--accent-color);
+  background: var(--bg-secondary);
+}
+
+.social-icons a svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ============================================
+   6. 文章卡片
+   ============================================ */
+.post-entry {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease-out;
+  animation: fadeSlideUp 0.5s ease-out both;
+}
+
+.post-entry:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--border-glow);
+}
+
+.post-entry .entry-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.post-entry .entry-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.post-entry .entry-header h2 a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.post-entry .entry-header h2 a:hover {
+  color: var(--accent-color);
+}
+
+.post-entry .entry-content {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.post-entry .entry-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.post-entry .entry-footer span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.post-entry .entry-footer svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ============================================
+   7. 标签样式
+   ============================================ */
+.tags-tags a {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease-out;
+  margin: 5px;
+}
+
+.tags-tags a:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--border-glow);
+  color: var(--accent-color);
+  background: var(--bg-secondary);
+}
+
+/* ============================================
+   8. 入场动画
+   ============================================ */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 交错动画 */
+.post-entry:nth-child(1) { animation-delay: 0.05s; }
+.post-entry:nth-child(2) { animation-delay: 0.1s; }
+.post-entry:nth-child(3) { animation-delay: 0.15s; }
+.post-entry:nth-child(4) { animation-delay: 0.2s; }
+.post-entry:nth-child(5) { animation-delay: 0.25s; }
+
+/* ============================================
+   9. 数字呼吸灯
+   ============================================ */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(0, 194, 255, 0);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 194, 255, 0.15);
+  }
+}
+
+.post-entry .entry-header h2 {
+  animation: pulse-glow 3s ease-in-out infinite;
+  animation-delay: 1s;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin: -5px -10px;
+}
+
+/* ============================================
+   10. 响应式设计
+   ============================================ */
+@media (max-width: 768px) {
+  .profile {
+    padding: 25px;
+    margin: 20px 10px;
+  }
+  
+  .profile h1 {
+    font-size: 2rem;
+  }
+  
+  .profile .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .profile .buttons a {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .post-entry {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .post-entry .entry-header h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================================
+   11. 滚动条美化
+   ============================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ============================================
+   12. 代码块增强
+   ============================================ */
+pre {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+/* 行内代码 */
+p code {
+  background: var(--bg-tertiary);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* ============================================
+   13. 菜单增强
+   ============================================ */
+#menu a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease-out;
+}
+
+#menu a:hover {
+  background: var(--bg-tertiary);
+  color: var(--accent-color);
+}
+
+#menu a.active {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: white;
+}
+
+/* ============================================
+   14. 搜索框
+   ============================================ */
+#searchbox {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: var(--text-primary);
+  transition: all 0.3s ease-out;
+}
+
+#searchbox:focus {
+  border-color: var(--border-glow);
+  box-shadow: 0 0 20px rgba(0, 194, 255, 0.2);
+  outline: none;
+}
+
+/* ============================================
+   15. 页脚
+   ============================================ */
+footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+footer a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+footer a:hover {
+  color: var(--accent-color);
+}

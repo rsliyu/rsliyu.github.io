@@ -2,6 +2,7 @@ baseURL = "https://rsliyu.github.io/"
 languageCode = "zh-cn"
 title = "煜哥的博客"
 theme = "PaperMod"
+
 [pagination]
   pagerSize = 10
 
@@ -11,38 +12,108 @@ theme = "PaperMod"
   author = "李俊昊"
   defaultTheme = "auto"
   ShowReadingTime = true
-  ShowShareButtons = false
+  ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowToc = true
   TocOpen = false
   comments = false
+  ShowWordCount = true
+  ShowRssButtonInTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
 
+  # Profile Mode Configuration
+  [params.profileMode]
+    enabled = true
+    title = "👋 你好，我是煜哥"
+    subtitle = "遥感工程师 · AI 全栈开发者 · 开源爱好者"
+    imageUrl = "images/avatar.png"
+    imageWidth = 150
+    imageHeight = 150
+    imageTitle = "煜哥"
+
+    [[params.profileMode.buttons]]
+      name = "📝 文章"
+      url = "/posts/"
+
+    [[params.profileMode.buttons]]
+      name = "🏷️ 标签"
+      url = "/tags/"
+
+    [[params.profileMode.buttons]]
+      name = "👤 关于"
+      url = "/about/"
+
+  # Home Info Mode (fallback if profileMode disabled)
   [params.homeInfoParams]
     Title = "👋 你好，我是煜哥"
     Content = "遥感工程师 · AI 全栈开发者 · 记录技术与生活"
 
+  # Social Icons
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/rsliyu"
 
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:rsliyu@foxmail.com"
+
+  [[params.socialIcons]]
+    name = "telegram"
+    url = "https://t.me/liyuchangsheng_bot"
+
+  # Cover Image
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+  # Edit Post
+  [params.editPost]
+    URL = ""
+    Text = "编辑本文"
+    appendFilePath = true
+
+  # Assets
+  [params.assets]
+    disableFingerprinting = true
+
+  # Label
+  [params.label]
+    text = "煜哥的博客"
+
 [menu]
   [[menu.main]]
     identifier = "posts"
-    name = "文章"
+    name = "📝 文章"
     url = "/posts/"
     weight = 10
   [[menu.main]]
     identifier = "tags"
-    name = "标签"
+    name = "🏷️ 标签"
     url = "/tags/"
     weight = 20
   [[menu.main]]
+    identifier = "archives"
+    name = "📚 归档"
+    url = "/archives/"
+    weight = 25
+  [[menu.main]]
     identifier = "about"
-    name = "关于"
+    name = "👤 关于"
     url = "/about/"
     weight = 30
+  [[menu.main]]
+    identifier = "search"
+    name = "🔍 搜索"
+    url = "/search/"
+    weight = 40
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -51,3 +122,26 @@ theme = "PaperMod"
   [markup.highlight]
     style = "dracula"
     lineNos = false
+    codeFences = true
+    guessSyntax = true
+    noClasses = false
+
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
+  [[related.indices]]
+    name = "categories"
+    weight = 50
+
+[minify]
+  disableXML = true
+  minifyOutput = true
