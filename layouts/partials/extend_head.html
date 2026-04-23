@@ -1,36 +1,45 @@
-<!-- Custom head additions -->
-<meta name="theme-color" content="#0F172A">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-<!-- Preload critical fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
-<!-- Custom meta tags -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="{{ .Title }}">
-<meta property="og:description" content="{{ .Description }}">
-<meta property="og:image" content="{{ "images/avatar.png" | absURL }}">
-<meta property="og:url" content="{{ .Permalink }}">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ .Title }}">
-<meta name="twitter:description" content="{{ .Description }}">
-<meta name="twitter:image" content="{{ "images/avatar.png" | absURL }}">
-
-<!-- Structured Data -->
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Description | default .Summary | plainify | truncate 160 }}",
+  "url": "{{ .Permalink }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Params.author | default .Site.Params.author }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+  {{- if .Params.tags }},
+  "keywords": [{{ range $i, $tag := .Params.tags }}{{ if $i }}, {{ end }}"{{ $tag }}"{{ end }}]
+  {{- end }}
+}
+</script>
+{{ else if .IsHome }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "{{ .Title }}",
-  "description": "{{ .Description }}",
-  "url": "{{ .Permalink }}",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ .Site.Params.description }}",
   "author": {
     "@type": "Person",
-    "name": "{{ .Site.Params.author }}"
+    "name": "{{ .Site.Params.author }}",
+    "url": "{{ .Site.BaseURL }}"
   }
 }
 </script>
+{{ end }}

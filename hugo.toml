@@ -161,3 +161,19 @@ theme = "PaperMod"
 [minify]
   disableXML = true
   minifyOutput = true
+
+# SEO Configuration
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[markup.goldmark.parser]
+  [markup.goldmark.parser.attribute]
+    block = true
+
+# Open Graph
+[params.social]
+  github = "rsliyu"
+  email = "rsliyu@foxmail.com"
+  telegram = "liyuchangsheng_bot"
