@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PyTorch on 煜哥的博客</title>
+    <link>https://rsliyu.github.io/tags/pytorch/</link>
+    <description>Recent content in PyTorch on 煜哥的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 23 Apr 2026 16:00:00 +0800</lastBuildDate>
+    <atom:link href="https://rsliyu.github.io/tags/pytorch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>遥感影像分类：从传统方法到深度学习</title>
+      <link>https://rsliyu.github.io/posts/tech/remote-sensing/2026-04-23-remote-sensing-classification/</link>
+      <pubDate>Thu, 23 Apr 2026 16:00:00 +0800</pubDate>
+      <guid>https://rsliyu.github.io/posts/tech/remote-sensing/2026-04-23-remote-sensing-classification/</guid>
+      <description>梳理遥感影像分类的技术演进，从最大似然到ResNet，记录踩过的坑和实战经验。</description>
+    </item>
+    <item>
+      <title>从 GEE 到 PyTorch：一个遥感人的 AI 自学路径</title>
+      <link>https://rsliyu.github.io/posts/thoughts/2026-04-23-from-gee-to-pytorch/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/posts/thoughts/2026-04-23-from-gee-to-pytorch/</guid>
+      <description>遥感研究生如何从 Google Earth Engine 入手，一步步走向 PyTorch 深度学习和全栈开发的实战经历。</description>
+    </item>
+  </channel>
+</rss>

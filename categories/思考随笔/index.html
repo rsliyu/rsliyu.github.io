@@ -1,0 +1,41 @@
+<!doctype html><html lang=en dir=auto data-theme=dark><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>思考随笔 | 煜哥的博客</title>
+<meta name=keywords content><meta name=description content="遥感 · AI · 全栈开发"><meta name=author content="李俊昊"><link rel=canonical href=https://rsliyu.github.io/categories/%E6%80%9D%E8%80%83%E9%9A%8F%E7%AC%94/><link crossorigin=anonymous href=/assets/css/stylesheet.css rel="preload stylesheet" as=style><link rel=icon href=https://rsliyu.github.io/favicon.svg><link rel=icon type=image/png sizes=16x16 href=https://rsliyu.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://rsliyu.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://rsliyu.github.io/apple-touch-icon.png><link rel=mask-icon href=https://rsliyu.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://rsliyu.github.io/categories/%E6%80%9D%E8%80%83%E9%9A%8F%E7%AC%94/index.xml title=rss><link rel=alternate hreflang=en href=https://rsliyu.github.io/categories/%E6%80%9D%E8%80%83%E9%9A%8F%E7%AC%94/><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><script data-goatcounter=https://liyu.goatcounter.com/count async src=//gc.zgo.at/count.js></script><meta property="og:url" content="https://rsliyu.github.io/categories/%E6%80%9D%E8%80%83%E9%9A%8F%E7%AC%94/"><meta property="og:site_name" content="煜哥的博客"><meta property="og:title" content="思考随笔"><meta property="og:description" content="遥感 · AI · 全栈开发"><meta property="og:locale" content="zh_cn"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="思考随笔"><meta name=twitter:description content="遥感 · AI · 全栈开发"></head><body class=list id=top><header class=header><nav class=header-nav><div class=logo><a href=https://rsliyu.github.io/ accesskey=h title="煜哥的博客 (Alt + H)">煜哥的博客</a></div><ul id=menu class=menu><li><a href=https://rsliyu.github.io/posts/ title="📝 文章"><span>📝 文章</span></a></li><li><a href=https://rsliyu.github.io/projects/ title="🚀 项目"><span>🚀 项目</span></a></li><li><a href=https://rsliyu.github.io/categories/ title="📂 分类"><span>📂 分类</span></a></li><li><a href=https://rsliyu.github.io/tags/ title="🏷️ 标签"><span>🏷️ 标签</span></a></li><li><a href=https://rsliyu.github.io/archives/ title="📚 归档"><span>📚 归档</span></a></li><li><a href=https://rsliyu.github.io/about/ title="👤 关于"><span>👤 关于</span></a></li><li><a href=https://rsliyu.github.io/search/ title="🔍 搜索 (Alt + /)" accesskey=/><span>🔍 搜索</span></a></li></ul></nav></header><main class=main><header class=page-header><nav class=breadcrumbs role=navigation aria-label=Breadcrumb><a href=https://rsliyu.github.io/>Home</a>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"/></svg>
+<a href=https://rsliyu.github.io/categories/>Categories</a></nav><h1>思考随笔</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>从 GEE 到 PyTorch：一个遥感人的 AI 自学路径</h2></header><div class=entry-content><p>起点：GEE 打开了新世界 读研的时候，导师扔过来一个需求：用遥感数据做作物种植结构提取。传统做法是 ENVI + 人工目视解译，一张图要判读大半天。偶然间发现了 Google Earth Engine（GEE），一个跑在云端的遥感分析平台，几十行 JavaScript 就能处理 TB 级的影像数据。
+GEE 最大的好处是不用下载数据。Landsat、Sentinel、MODIS 全在云端，直接调 API 做裁剪、合成、分类。第一次用它跑完一个 NDVI 时序分析，从写代码到出结果只花了 20 分钟，而之前光下载数据就要半天。
+但 GEE 有两个硬伤：一是网络问题，国内访问时好时坏；二是算力受限，复杂模型跑不动。这让我开始思考——能不能把流程搬到本地？
+转折：Python 是连接一切的胶水 GEE 的 Python 版 API（geemap）是个过渡方案。用 geemap 可以在 Jupyter Notebook 里交互式地调用 GEE，同时用本地 Python 做后处理。
+慢慢地，我的工具链变成了：
+数据获取：GEE API + sentinelsat（下载 Sentinel 数据） 预处理：rasterio + GDAL（裁剪、重投影、波段计算） 特征提取：scikit-learn（PCA、特征选择） 可视化：matplotlib + folium（地图可视化） 这个阶段最大的收获是理解了数据流的概念：遥感分析本质上就是一条数据管道，从原始影像到最终产品，每一步都是输入 → 处理 → 输出。
+跃迁：PyTorch 和深度学习 转折点是导师说了一句：“现在做变化检测，深度学习效果比传统方法好很多。”
+于是开始啃 PyTorch。说实话，入门曲线很陡。之前写 Python 是"能跑就行"，PyTorch 要求你理解张量运算、自动求导、GPU 加速这些概念。
+我的学习路径是：
+先跑通官方教程：PyTorch 的 60 分钟入门教程，逐行理解 复现一篇论文：找了一篇用 U-Net 做建筑物提取的论文，从数据准备到模型训练完整走一遍 改造到自己的场景：把 U-Net 换成 DeepLabV3+，数据换成遥感影像，做大棚检测 踩过的坑不少。最大的一个坑是数据预处理——遥感影像动辄几 GB，不能直接塞进 DataLoader。后来学会了用滑动窗口切片 + 数据集分块（torch.utils.data.Dataset 自定义）的方式解决。
+...</p></div><footer class=entry-footer><span title='2026-04-23 00:00:00 +0000 UTC'>April 23, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>李俊昊</span></footer><a class=entry-link aria-label="post link to 从 GEE 到 PyTorch：一个遥感人的 AI 自学路径" href=https://rsliyu.github.io/posts/thoughts/2026-04-23-from-gee-to-pytorch/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://rsliyu.github.io/>煜哥的博客</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top id=top-link class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey=g><svg viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg>
+</a><script>document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();const t=document.querySelector(this.getAttribute("href"));t&&t.scrollIntoView({behavior:"smooth",block:"start"})})});const backToTopButton=document.createElement("button");backToTopButton.innerHTML="↑",backToTopButton.className="back-to-top",backToTopButton.title="回到顶部",document.body.appendChild(backToTopButton),window.addEventListener("scroll",()=>{window.pageYOffset>300?backToTopButton.style.display="block":backToTopButton.style.display="none"}),backToTopButton.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"})});const style=document.createElement("style");style.textContent=`
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    transition: all 0.3s ease-out;
+  }
+  
+  .back-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+  }
+`,document.head.appendChild(style)</script><script>if(typeof Storage!="undefined"){const e=localStorage.getItem("pageViews")||0;localStorage.setItem("pageViews",parseInt(e)+1)}</script><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var toplink=document.getElementById("top-link");window.onscroll=function(){const e=window.innerHeight;document.body.scrollTop>e||document.documentElement.scrollTop>e?toplink.classList.remove("hidden"):toplink.classList.add("hidden")}</script></body></html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>全栈开发 on 煜哥的博客</title>
+    <link>https://rsliyu.github.io/categories/%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91/</link>
+    <description>Recent content in 全栈开发 on 煜哥的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rsliyu.github.io/categories/%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FastAPI &#43; Vue3：智慧农业数据平台架构实践</title>
+      <link>https://rsliyu.github.io/posts/fullstack/2026-04-23-fastapi-vue3-platform/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/posts/fullstack/2026-04-23-fastapi-vue3-platform/</guid>
+      <description>从零搭建智慧农业数据平台的技术选型、架构设计和踩坑记录，覆盖后端 FastAPI、前端 Vue3 &#43; DataV 大屏。</description>
+    </item>
+  </channel>
+</rss>

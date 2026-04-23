@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>煜哥的博客</title>
+    <link>https://rsliyu.github.io/</link>
+    <description>Recent content on 煜哥的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 23 Apr 2026 18:00:00 +0800</lastBuildDate>
+    <atom:link href="https://rsliyu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>遥感&#43;AI：农业保险中的深度学习应用</title>
+      <link>https://rsliyu.github.io/posts/tech/ai-ml/2026-04-23-remote-sensing-ai-agriculture/</link>
+      <pubDate>Thu, 23 Apr 2026 18:00:00 +0800</pubDate>
+      <guid>https://rsliyu.github.io/posts/tech/ai-ml/2026-04-23-remote-sensing-ai-agriculture/</guid>
+      <description>遥感技术在农业保险中的实际应用，从灾害评估到作物识别。</description>
+    </item>
+    <item>
+      <title>遥感影像分类：从传统方法到深度学习</title>
+      <link>https://rsliyu.github.io/posts/tech/remote-sensing/2026-04-23-remote-sensing-classification/</link>
+      <pubDate>Thu, 23 Apr 2026 16:00:00 +0800</pubDate>
+      <guid>https://rsliyu.github.io/posts/tech/remote-sensing/2026-04-23-remote-sensing-classification/</guid>
+      <description>梳理遥感影像分类的技术演进，从最大似然到ResNet，记录踩过的坑和实战经验。</description>
+    </item>
+    <item>
+      <title>用Python做GIS：从GeoPandas到空间数据库</title>
+      <link>https://rsliyu.github.io/posts/tech/gis/2026-04-23-python-gis-development/</link>
+      <pubDate>Thu, 23 Apr 2026 17:00:00 +0800</pubDate>
+      <guid>https://rsliyu.github.io/posts/tech/gis/2026-04-23-python-gis-development/</guid>
+      <description>Python GIS开发实战经验，从GeoPandas快速上手到PostGIS生产部署。</description>
+    </item>
+    <item>
+      <title>FastAPI &#43; Vue3：智慧农业数据平台架构实践</title>
+      <link>https://rsliyu.github.io/posts/fullstack/2026-04-23-fastapi-vue3-platform/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/posts/fullstack/2026-04-23-fastapi-vue3-platform/</guid>
+      <description>从零搭建智慧农业数据平台的技术选型、架构设计和踩坑记录，覆盖后端 FastAPI、前端 Vue3 &#43; DataV 大屏。</description>
+    </item>
+    <item>
+      <title>Hugo &#43; PaperMod &#43; GitHub Pages：零成本搭建个人博客</title>
+      <link>https://rsliyu.github.io/posts/tutorials/2026-04-23-hugo-blog-setup/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/posts/tutorials/2026-04-23-hugo-blog-setup/</guid>
+      <description>从零开始，用 Hugo 静态站点生成器 &#43; PaperMod 主题 &#43; GitHub Pages 托管，搭建一个暗色科技风的个人技术博客。</description>
+    </item>
+    <item>
+      <title>从 GEE 到 PyTorch：一个遥感人的 AI 自学路径</title>
+      <link>https://rsliyu.github.io/posts/thoughts/2026-04-23-from-gee-to-pytorch/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/posts/thoughts/2026-04-23-from-gee-to-pytorch/</guid>
+      <description>遥感研究生如何从 Google Earth Engine 入手，一步步走向 PyTorch 深度学习和全栈开发的实战经历。</description>
+    </item>
+    <item>
+      <title>关于</title>
+      <link>https://rsliyu.github.io/about/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/about/</guid>
+      <description>遥感工程师 · AI 全栈开发者</description>
+    </item>
+    <item>
+      <title>写作规范</title>
+      <link>https://rsliyu.github.io/posts/writing-guide/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/posts/writing-guide/</guid>
+      <description>&lt;h1 id=&#34;博客写作规范&#34;&gt;博客写作规范&lt;/h1&gt;
+&lt;h2 id=&#34;front-matter-模板&#34;&gt;Front Matter 模板&lt;/h2&gt;
+&lt;p&gt;每篇文章必须包含以下 Front Matter：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;文章标题&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;ld&#34;&gt;2026-04-23&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;draft&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;categories&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;技术笔记&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# 必须，对应 content/posts/ 下的分类&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tags&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Python&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;FastAPI&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# 必须，便于检索&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;一句话摘要&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# 必须，用于 SEO 和列表展示&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;cover&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;images/cover.jpg&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# 可选，封面图&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;封面图描述&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;hidden&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# true 则不在列表中显示封面&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;分类体系&#34;&gt;分类体系&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;分类&lt;/th&gt;
+          &lt;th&gt;路径&lt;/th&gt;
+          &lt;th&gt;内容&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;技术笔记 &amp;gt; 遥感&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;tech/remote-sensing/&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;遥感影像、变化检测、GEE 等&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;技术笔记 &amp;gt; AI/ML&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;tech/ai-ml/&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;PyTorch、YOLO、模型训练&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;技术笔记 &amp;gt; GIS 开发&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;tech/gis/&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;MapLibre、GeoServer、WebGIS&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;技术笔记 &amp;gt; 全栈开发&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;tech/fullstack/&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;FastAPI、Vue3、Docker&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;项目实战&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;projects/&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;完整项目记录&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;思考随笔&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;thoughts/&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;技术思考、行业观察&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;教程&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;tutorials/&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;手把手入门指南&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;文件命名&#34;&gt;文件命名&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;格式：&lt;code&gt;YYYY-MM-DD-简短英文标题.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;示例：&lt;code&gt;2026-04-23-hugo-blog-setup.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;全小写，单词间用连字符 &lt;code&gt;-&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;内容规范&#34;&gt;内容规范&lt;/h2&gt;
+&lt;h3 id=&#34;标题&#34;&gt;标题&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;一级标题（&lt;code&gt;#&lt;/code&gt;）仅用于文章主标题，正文不使用&lt;/li&gt;
+&lt;li&gt;正文从二级标题（&lt;code&gt;##&lt;/code&gt;）开始&lt;/li&gt;
+&lt;li&gt;标题层级不超过三级&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;中英文混排&#34;&gt;中英文混排&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;英文单词两侧加空格：&lt;code&gt;使用 FastAPI 框架&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;专有名词保持原样：&lt;code&gt;GitHub&lt;/code&gt;、&lt;code&gt;PyTorch&lt;/code&gt;、&lt;code&gt;Vue3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;数字与中文之间加空格：&lt;code&gt;共 3 个文件&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;代码块&#34;&gt;代码块&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;使用 fenced code block（&lt;code&gt;```&lt;/code&gt;）并标注语言&lt;/li&gt;
+&lt;li&gt;关键代码加注释&lt;/li&gt;
+&lt;li&gt;长代码块折叠或分段讲解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;图片&#34;&gt;图片&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;放置在 &lt;code&gt;static/images/&lt;/code&gt; 下&lt;/li&gt;
+&lt;li&gt;文件名有意义：&lt;code&gt;fastapi-architecture.png&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;必须加 alt 文字&lt;/li&gt;
+&lt;li&gt;宽度建议不超过 800px&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;链接&#34;&gt;链接&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;内部链接使用 Hugo 相对路径&lt;/li&gt;
+&lt;li&gt;外部链接加 &lt;code&gt;[链接文字](url)&lt;/code&gt; 格式&lt;/li&gt;
+&lt;li&gt;重要参考文献放在文末&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;文章结构模板&#34;&gt;文章结构模板&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title: &amp;#34;标题&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;date: 2026-04-23
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;categories: [&amp;#34;技术笔记&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tags: [&amp;#34;标签1&amp;#34;, &amp;#34;标签2&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;description: &amp;#34;一句话摘要&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;## 背景
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;为什么写这篇文章，解决什么问题。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;## 方案
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;核心内容，分步骤讲解。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;## 实现
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;代码、配置、操作步骤。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;## 效果
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;截图、性能数据、对比。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;## 总结
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;关键要点回顾。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;## 参考
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; [&lt;span class=&#34;nt&#34;&gt;链接1&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;url&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; [&lt;span class=&#34;nt&#34;&gt;链接2&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;url&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;发布流程&#34;&gt;发布流程&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;在对应分类目录下创建 &lt;code&gt;.md&lt;/code&gt; 文件&lt;/li&gt;
+&lt;li&gt;填写完整 Front Matter&lt;/li&gt;
+&lt;li&gt;本地预览：&lt;code&gt;hugo server -D&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;确认无误后 &lt;code&gt;draft: false&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;构建部署：&lt;code&gt;hugo --minify&lt;/code&gt; → 推送 gh-pages&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>大棚变化检测：遥感影像自动更新矢量数据</title>
+      <link>https://rsliyu.github.io/posts/projects/2026-04-23-greenhouse-change-detection/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/posts/projects/2026-04-23-greenhouse-change-detection/</guid>
+      <description>如何用新旧两期遥感影像自动检测大棚的保留、消失和新增，实现矢量数据的半自动化更新。</description>
+    </item>
+  </channel>
+</rss>

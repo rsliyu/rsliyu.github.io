@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on 煜哥的博客</title>
+    <link>https://rsliyu.github.io/categories/</link>
+    <description>Recent content in Categories on 煜哥的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 23 Apr 2026 18:00:00 +0800</lastBuildDate>
+    <atom:link href="https://rsliyu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI/ML</title>
+      <link>https://rsliyu.github.io/categories/ai/ml/</link>
+      <pubDate>Thu, 23 Apr 2026 18:00:00 +0800</pubDate>
+      <guid>https://rsliyu.github.io/categories/ai/ml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>技术笔记</title>
+      <link>https://rsliyu.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Thu, 23 Apr 2026 18:00:00 +0800</pubDate>
+      <guid>https://rsliyu.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GIS</title>
+      <link>https://rsliyu.github.io/categories/gis/</link>
+      <pubDate>Thu, 23 Apr 2026 17:00:00 +0800</pubDate>
+      <guid>https://rsliyu.github.io/categories/gis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>遥感</title>
+      <link>https://rsliyu.github.io/categories/%E9%81%A5%E6%84%9F/</link>
+      <pubDate>Thu, 23 Apr 2026 16:00:00 +0800</pubDate>
+      <guid>https://rsliyu.github.io/categories/%E9%81%A5%E6%84%9F/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>全栈开发</title>
+      <link>https://rsliyu.github.io/categories/%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/categories/%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>思考随笔</title>
+      <link>https://rsliyu.github.io/categories/%E6%80%9D%E8%80%83%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/categories/%E6%80%9D%E8%80%83%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>教程</title>
+      <link>https://rsliyu.github.io/categories/%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/categories/%E6%95%99%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>项目实战</title>
+      <link>https://rsliyu.github.io/categories/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/categories/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

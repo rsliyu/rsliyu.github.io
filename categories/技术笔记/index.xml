@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>技术笔记 on 煜哥的博客</title>
+    <link>https://rsliyu.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 技术笔记 on 煜哥的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 23 Apr 2026 18:00:00 +0800</lastBuildDate>
+    <atom:link href="https://rsliyu.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>遥感&#43;AI：农业保险中的深度学习应用</title>
+      <link>https://rsliyu.github.io/posts/tech/ai-ml/2026-04-23-remote-sensing-ai-agriculture/</link>
+      <pubDate>Thu, 23 Apr 2026 18:00:00 +0800</pubDate>
+      <guid>https://rsliyu.github.io/posts/tech/ai-ml/2026-04-23-remote-sensing-ai-agriculture/</guid>
+      <description>遥感技术在农业保险中的实际应用，从灾害评估到作物识别。</description>
+    </item>
+    <item>
+      <title>遥感影像分类：从传统方法到深度学习</title>
+      <link>https://rsliyu.github.io/posts/tech/remote-sensing/2026-04-23-remote-sensing-classification/</link>
+      <pubDate>Thu, 23 Apr 2026 16:00:00 +0800</pubDate>
+      <guid>https://rsliyu.github.io/posts/tech/remote-sensing/2026-04-23-remote-sensing-classification/</guid>
+      <description>梳理遥感影像分类的技术演进，从最大似然到ResNet，记录踩过的坑和实战经验。</description>
+    </item>
+    <item>
+      <title>用Python做GIS：从GeoPandas到空间数据库</title>
+      <link>https://rsliyu.github.io/posts/tech/gis/2026-04-23-python-gis-development/</link>
+      <pubDate>Thu, 23 Apr 2026 17:00:00 +0800</pubDate>
+      <guid>https://rsliyu.github.io/posts/tech/gis/2026-04-23-python-gis-development/</guid>
+      <description>Python GIS开发实战经验，从GeoPandas快速上手到PostGIS生产部署。</description>
+    </item>
+    <item>
+      <title>FastAPI &#43; Vue3：智慧农业数据平台架构实践</title>
+      <link>https://rsliyu.github.io/posts/fullstack/2026-04-23-fastapi-vue3-platform/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/posts/fullstack/2026-04-23-fastapi-vue3-platform/</guid>
+      <description>从零搭建智慧农业数据平台的技术选型、架构设计和踩坑记录，覆盖后端 FastAPI、前端 Vue3 &#43; DataV 大屏。</description>
+    </item>
+    <item>
+      <title>大棚变化检测：遥感影像自动更新矢量数据</title>
+      <link>https://rsliyu.github.io/posts/projects/2026-04-23-greenhouse-change-detection/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/posts/projects/2026-04-23-greenhouse-change-detection/</guid>
+      <description>如何用新旧两期遥感影像自动检测大棚的保留、消失和新增，实现矢量数据的半自动化更新。</description>
+    </item>
+  </channel>
+</rss>

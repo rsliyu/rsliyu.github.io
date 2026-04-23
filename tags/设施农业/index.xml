@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>设施农业 on 煜哥的博客</title>
+    <link>https://rsliyu.github.io/tags/%E8%AE%BE%E6%96%BD%E5%86%9C%E4%B8%9A/</link>
+    <description>Recent content in 设施农业 on 煜哥的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rsliyu.github.io/tags/%E8%AE%BE%E6%96%BD%E5%86%9C%E4%B8%9A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>大棚变化检测：遥感影像自动更新矢量数据</title>
+      <link>https://rsliyu.github.io/posts/projects/2026-04-23-greenhouse-change-detection/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://rsliyu.github.io/posts/projects/2026-04-23-greenhouse-change-detection/</guid>
+      <description>如何用新旧两期遥感影像自动检测大棚的保留、消失和新增，实现矢量数据的半自动化更新。</description>
+    </item>
+  </channel>
+</rss>
