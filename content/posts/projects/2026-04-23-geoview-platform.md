@@ -1,10 +1,10 @@
 ---
-title: "GeoView：从零搭建遥感影像智能解译平台"
+title: "从零搭建遥感云平台：15 个 ONNX 模型 + 10 容器单端口网关"
 date: 2026-04-23T18:00:00+08:00
 draft: false
 categories: ["项目实战", "技术笔记"]
 tags: ["遥感", "ONNX", "Docker", "Flask", "COG", "STAC", "深度学习", "全栈开发"]
-description: "一个人、一周时间，用 COG + STAC + ONNX Runtime 搭建了一个包含 15 个深度学习模型的遥感智能解译平台。完整记录技术选型、架构设计、代码审查和踩坑经历。"
+description: "用 COG + STAC + ONNX Runtime 搭建遥感云平台，集成 15 个深度学习模型，10 个 Docker 容器单端口网关。完整记录技术选型、架构设计、代码审查和踩坑经历。"
 ---
 
 ## 为什么要做这个平台
