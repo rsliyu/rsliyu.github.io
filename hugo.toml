@@ -100,7 +100,7 @@ theme = "PaperMod"
 
   # GoatCounter Analytics
   [params.goatcounter]
-    code = "rsliyu"
+    code = "liyu"
 
   # Assets
   [params.assets]
