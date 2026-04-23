@@ -105,6 +105,11 @@ theme = "PaperMod"
     url = "/categories/"
     weight = 15
   [[menu.main]]
+    identifier = "projects"
+    name = "🚀 项目"
+    url = "/projects/"
+    weight = 12
+  [[menu.main]]
     identifier = "tags"
     name = "🏷️ 标签"
     url = "/tags/"

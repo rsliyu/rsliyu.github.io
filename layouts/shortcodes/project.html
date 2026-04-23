@@ -1,0 +1,14 @@
+<div class="project-card {{ with .Get "status" }}status-{{ . }}{{ end }}">
+  <div class="project-header">
+    <h3 class="project-title">{{ .Get "title" }}</h3>
+    {{ with .Get "status" }}
+    <span class="project-badge {{ . }}">{{ if eq . "active" }}🟢 维护中{{ else if eq . "archived" }}📦 已归档{{ else }}🚧 开发中{{ end }}</span>
+    {{ end }}
+  </div>
+  <p class="project-desc">{{ .Get "desc" }}</p>
+  <div class="project-meta">
+    {{ with .Get "tech" }}<span class="project-tech">{{ . }}</span>{{ end }}
+    {{ with .Get "link" }}<a href="{{ . }}" class="project-link" target="_blank" rel="noopener">GitHub →</a>{{ end }}
+    {{ with .Get "post" }}<a href="{{ . }}" class="project-link">详细文章 →</a>{{ end }}
+  </div>
+</div>
